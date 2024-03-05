@@ -1,12 +1,9 @@
-package Builders;
+package Shop;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
 public class Listener {
-    //En listener som skapas upp i de olika plaggbyggarna
-    // Den kopplas till CEO som ligger och lyssnar, så varje gång
-    //vi ändrar värdet på Strängen creatingClothes (vilket vi gör i build metoden) meddelas Lama.CEO
     private String creatingClothes;
     private String decoratingClothes;
 

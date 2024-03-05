@@ -2,7 +2,6 @@ package BusinessObjects.Clothes;
 
 public class TShirt extends Clothing {
 
-
     private String neck; //syr v-neck, crew neck, buttoned
     private String sleeves; // klipper short, bracelet, long
 
@@ -10,7 +9,6 @@ public class TShirt extends Clothing {
         setPrice(200);
         setName("TShirt");
     }
-
 
     @Override
     public void getDetails() {

@@ -1,9 +1,8 @@
 package Command;
 
-import Builders.Listener;
+import Shop.Listener;
 import BusinessObjects.Clothes.Clothing;
 import BusinessObjects.CEO;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,11 +27,9 @@ public class DecoratorPipeline {
         return clothing;
     }
 
-
     public Clothing getClothing() {
         return clothing;
     }
-
     public void setClothing(Clothing clothing) {
         this.clothing = clothing;
     }

@@ -4,7 +4,7 @@ import BusinessObjects.Clothes.Clothing;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-public abstract interface ClothesBuilder {
+public interface ClothesBuilder {
     AtomicInteger idCount = new AtomicInteger(0);
 
     default ClothesBuilder addSize(String size) {
@@ -32,7 +32,5 @@ public abstract interface ClothesBuilder {
         return null;
     }
 
-    default String getSpecifics() {
-        return null;
-    }
+
 }

@@ -17,6 +17,5 @@ public class SewOption2Command implements CommandInterface{
         }
         System.out.println("Details for "+clothing.getClass().getSimpleName()+" has been sewn");
         return clothing;
-
     }
 }

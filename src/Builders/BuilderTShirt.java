@@ -1,15 +1,11 @@
 package Builders;
 
 import BusinessObjects.Clothes.TShirt;
-import BusinessObjects.CEO;
 
 public class BuilderTShirt implements ClothesBuilder {
     private TShirt clothing = new TShirt();
-//    private Listener listener;
 
     public BuilderTShirt() {
-//        this.listener = new Listener();
-//        this.listener.addPropertyChangeListener(CEO.getInstance());
     }
 
     @Override
@@ -39,7 +35,6 @@ public class BuilderTShirt implements ClothesBuilder {
         } else if (!clothing.getColor().equalsIgnoreCase("green") && !clothing.getColor().equalsIgnoreCase("beige")) {
             throw new RuntimeException("Missing correct color");
         } else {
-          //  this.listener.setBuilding("TShirt"); //anger nytt värde på min string i min listener
             getClothing().setId(idCount.incrementAndGet());
             return clothing;
         }

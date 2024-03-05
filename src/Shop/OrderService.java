@@ -1,6 +1,6 @@
+package Shop;
+
 import Builders.ClothesBuilder;
-import Builders.Listener;
-import BusinessObjects.CEO;
 import BusinessObjects.Clothes.Clothing;
 import Command.DecoratorPipeline;
 
@@ -15,19 +15,12 @@ public class OrderService {
     private List<Clothing> clothes = new ArrayList<>(); // Lista med kläder som skapas när ordern är lagd och kläderna är tillverkade. Används för kvittot
     private static OrderService orderService = null;
 
-
-    //test
-    //  private static Listener listener = new Listener();
-
-
-    //test
     private OrderService() {
     }
 
     public static OrderService getInstance() {
         if (orderService == null) {
             orderService = new OrderService();
-            //  listener.addPropertyChangeListener(CEO.getInstance()); //test
         }
         return orderService;
     }
@@ -43,8 +36,6 @@ public class OrderService {
 
     public void execute() {
         for (ClothesBuilder builder : builders) {
-//            listener.setBuilding(builder.getClothing().getName());
-//            System.out.println("skriver ut till ceo här");
             builder.build();
         }
 

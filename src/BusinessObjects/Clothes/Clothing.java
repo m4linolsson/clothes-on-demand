@@ -9,13 +9,8 @@ public abstract class Clothing extends BusinessObjectClass {
     private String size; //s & l
     private String material; //Linen & cotton
     private String color; //Beige & green
-  //  private AtomicInteger count=new AtomicInteger(0);
-
-
-
 
     public Clothing() {
-//        this.setId(count.incrementAndGet());
     }
 
     public String getSize() {

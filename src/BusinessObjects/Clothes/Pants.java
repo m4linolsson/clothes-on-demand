@@ -36,6 +36,4 @@ public class Pants extends Clothing {
     public void setLength(String length) {
         Length = length;
     }
-
-
 }

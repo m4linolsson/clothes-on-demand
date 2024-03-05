@@ -1,3 +1,5 @@
+package Shop;
+
 import Builders.*;
 
 
@@ -155,7 +157,7 @@ public class Menu {
         String answerCut = scanner.nextLine();
 
         while (!answerCut.equalsIgnoreCase("1") && !answerCut.equalsIgnoreCase("2") && !answerCut.equalsIgnoreCase("3")) {
-            System.out.println("\nChoose " + cut + " 1." + cutShort + ", 2. " + cutMedium + " or 3. " + cutLong);
+            System.out.println("\nChoose " + cut + " 1. " + cutShort + ", 2. " + cutMedium + " or 3. " + cutLong);
             answerCut = scanner.nextLine();
         }
         if (answerCut.equalsIgnoreCase("1")) {

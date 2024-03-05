@@ -24,7 +24,6 @@ public class CEO extends BusinessObjectClass implements PropertyChangeListener {
         System.out.print("To CEO: ");
         if (evt.getPropertyName().equals("BuildingClothes")) {
             System.out.println("Producing " + evt.getNewValue());
-
         } else if (evt.getPropertyName().equals("DecoratingClothes")) {
             System.out.println(evt.getNewValue() + " ready");
         }

@@ -1,16 +1,12 @@
 package Builders;
 
 import BusinessObjects.Clothes.Skirt;
-import BusinessObjects.CEO;
 
 public class BuilderSkirt implements ClothesBuilder {
     private Skirt clothing = new Skirt();
 
-//    private Listener listener;
 
     public BuilderSkirt() {
-//        this.listener = new Listener();
-//        listener.addPropertyChangeListener(CEO.getInstance());
     }
 
     @Override
@@ -40,7 +36,6 @@ public class BuilderSkirt implements ClothesBuilder {
         } else if (!clothing.getColor().equalsIgnoreCase("green") && !clothing.getColor().equalsIgnoreCase("beige")) {
             throw new RuntimeException("Missing correct color");
         } else {
-            //  this.listener.setBuilding("Skirt");
             getClothing().setId(idCount.incrementAndGet());
             return clothing;
         }
@@ -49,16 +44,5 @@ public class BuilderSkirt implements ClothesBuilder {
     @Override
     public Skirt getClothing() {
         return this.clothing;
-    }
-
-
-    @Override
-    public String getSpecifics() {
-        String specifics = "Skirt \n " +
-                "Material: " + clothing.getMaterial() +
-                "\n Size: " + clothing.getSize() +
-                "\n Color: " + clothing.getColor() +
-                "\n Color: " + clothing.getId();
-        return specifics;
     }
 }
